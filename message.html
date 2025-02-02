@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="website icon" href="logo.png" type="png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div class="container">
             <div class="pro">
-                <div id="box1"></div>
+                <!-- <div id="box1"></div> -->
                 <img src="logo.png" alt="">
             </div>
             <div class="name">
@@ -21,12 +22,17 @@
             <div class="mess">
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="2826238b-59b7-47ca-9235-d98024e622dd">
-                    <label for="message">Message</label>
-                    <textarea name="message" class="input" required ></textarea>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="input" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="input" required><br>
+                    <label for="" class="me">Message</label>
+                    <textarea name="message" class="input" required></textarea>
                     <button type="submit" class="but">Submit</button>
                 </form>
             </div>
-        </div>    
-    </main>    
+        </div>
+    </main>
 </body>
+
 </html>
