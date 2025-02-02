@@ -59,6 +59,7 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    margin-top: -18px;
 }
 
 .container img {
@@ -66,11 +67,11 @@ main {
     width: 6vw;
     border-radius: 50%;
     margin-top: 1.5vw;
-    position: absolute;
-    left: 50%;
+    /* position: absolute; */
+    /* left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 6;
+    z-index: 6; */
 }
 
 
@@ -82,6 +83,8 @@ main {
     border-top-right-radius: 4vw;
     /* background-color: rgb(165, 220, 236); */
     position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -90,10 +93,10 @@ main {
     height: 10px;
     width: 10px;
     color: black;
-    margin-top: 1.5vw;
+    margin-top: 1.6vw;
     display: flex;
     align-items: center;
-    font-size: 2.1vw;
+    font-size: 2.5vw;
     justify-content: center;
     gap: 1.2vw;
 }
@@ -112,7 +115,7 @@ a {
 .para p {
     font-size: 15px;
     text-align: center;
-    margin: 1vw 0 0.5vw 0;
+    margin: 1.2vw 0 0.5vw 0;
 }
 
 .info {
@@ -132,37 +135,59 @@ button {
 }
 
 .mess{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     align-items: center;
     width: 100%;
+    padding-bottom: 20px;
     text-align: center;
 }
-label{
-    font-family: poppins;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-top: 0.7vw;
-    
+
+input{
+    margin-bottom: 5px;
 }
-textarea{
-    height: 100px;
+.input{
     width: 80%;
-    padding-top: 15px;
+    height: 34px;
+    border: 1px solid rgb(172, 172, 172);
+    outline: none;
+    color: black;
+    padding-left: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: poppins;
+    background-color: none;
+    font-size: 15px;
+    border-radius: 1vw;
+}
+.mess label{
+    font-family: poppins;
+    display: flex;
+    padding-left: 10%;
+    font-size: 16px;
+    /* margin-top: 20px; */
+    margin-top: 0.7vw;
+    text-align: top;
+}
+.mess textarea{
+    height: 70px;
+    width: 80%;
+    padding-top: 10px;
     padding-left: 12px;
     border-radius: 2vw;
+    align-items: center;
     font-family: poppins;
     overflow:hidden ;
     border: 1px solid grey;
-    margin-top: 0.6vw;
+    /* margin-top: 0.6vw; */
 }
 
 .but{
     background-color: rgb(225, 63, 138);
     color: white;
-    margin-top: 0.7vw;
+    margin-top: 5px;
     
 }
 
@@ -174,10 +199,16 @@ textarea:focus{
 
 
 @media (max-width: 600px) {
-
+    body{
+        height: 180vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     main {
-        height: 68%;
+        
+        height: 80%;
         padding: 5vw 2vw;
     }
 
@@ -190,14 +221,11 @@ textarea:focus{
         padding-bottom: 5vw;
     }
 
-
+    
     .container img {
         height: 22vw;
         width: 22vw;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -20%);
+        margin-top: 9vw;
     }
 
 
@@ -207,7 +235,7 @@ textarea:focus{
 
     .name h1 {
         font-size: 8vw;
-        margin: 5px;
+        margin-top: 2%;
     }
 
     .name p {
@@ -282,9 +310,43 @@ textarea:focus{
         margin-top: 4vw;
         font-size: 19px;
     }
-    
+    .input{
+        width: 80%;
+        height: 34px;
+        border: 1px solid rgb(172, 172, 172);
+        outline: none;
+        color: black;
+        padding-left: 12px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-family: poppins;
+        background-color: none;
+        font-size: 15px;
+        border-radius: 3vw;
+    }
     textarea:focus{
         border: 1px solid grey;
     }
+    .mess label{
+        font-family: poppins;
+        display: flex;
+        padding-left: 10%;
+        font-size: 16px;
+        /* margin-top: 20px; */
+        margin-top: 0.7vw;
+    }
+    .mess textarea{
+        height: 70px;
+        width: 80%;
+        padding-top: 10px;
+        padding-left: 12px;
+        border-radius: 4vw;
+        align-items: center;
+        font-family: poppins;
+        overflow:hidden ;
+        border: 1px solid grey;
+        /* margin-top: 0.6vw; */
+    }
+    
     
 }
